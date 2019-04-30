@@ -1,30 +1,26 @@
-var a;
+
+var future;
+
 function meiranyong(){
-	var nian=document.getElementById("pai01");
-	// nian.innerHTML=Math.floor((Math.random()*100)+1);
-	var xingyun=Math.floor((Math.random()*100)+1);
-	if(xingyun>=90){
-		nian.innerHTML="§大吉§";
-	}
-	else nian.innerHTML="§小吉§"+xingyun;
+	// var nian=document.getElementById("pai01");
 	
+	// var xingyun=Math.floor((Math.random()*100)+1);
+	// if(xingyun>=90){
+	// 	nian.innerHTML="§大吉§";
+	// }
+	// else nian.innerHTML="§小吉§"+xingyun;
+	// 
+	// ji();
+	// $("#pai01").removeClass("pai");
+	// $("#pai01").addClass("haihai");
+
+	// randd(zpp);
 	ji();
-	// $('#pai01').css("background","url(neirong.jpg)");
-	$("#pai01").removeClass("pai");
-	$("#pai01").addClass("haihai");
-	
-	
-	// alert(randd(zpp.join("-")));
-	randd(zpp);
-	// alert(zpp.join("-"));
 	zuoshi();
+	
+	//disabled
+	$("#pailan").css("disabled","none");
 }
-
-// function draww(a){
-// 	var 
-// }
-
-
 
 var jishu;
 var daji;
@@ -33,25 +29,46 @@ function ji(){
 	panji();
 }
 function panji(){
-	var yue=document.getElementById("pai02");
+	// var yue=document.getElementById("pai02");
+	
 	if(daji>=90){
-		yue.innerHTML="<p>§大吉§</p>";
+		future="<p style='color:red;'>§<br/>大吉<br/>§</p>";
 	}
 	else if((daji>=70)&&(daji<90)){
-		yue.innerHTML="§中吉§";
+		future="<p style='color:red;'>§<br/>中吉<br/>§</p>";
 	}
 	else if((daji>=50)&&(daji<70)){
-		yue.innerHTML="§小吉§";
+		future="<p style='color:red'>§<br/>小吉<br/>§</p>";
 	}
 	else if((daji>=30)&&(daji<50)){
-		yue.innerHTML="§中平§";
+		future="<p>§<br/>中平<br/>§</p>";
 	}
 	else if((daji>=10)&&(daji<30)){
-		yue.innerHTML="§ 凶 §";
+		future="<p>§<br/> 凶 <br/>§</p>";
 	}
 	else if((daji>=0)&&(daji<10)){
-		yue.innerHTML="§大凶§";
+		future="<p>§<br/>大凶<br/>§</p>";
 	}
+	
+	// var yue=document.getElementById("pai02");
+	// if(daji>=90){
+	// 	yue.innerHTML="<p>§大吉§</p>";
+	// }
+	// else if((daji>=70)&&(daji<90)){
+	// 	yue.innerHTML="<p>§中吉§</p>";
+	// }
+	// else if((daji>=50)&&(daji<70)){
+	// 	yue.innerHTML="<p>§小吉§</p>";
+	// }
+	// else if((daji>=30)&&(daji<50)){
+	// 	yue.innerHTML="<p>§中平§</p>";
+	// }
+	// else if((daji>=10)&&(daji<30)){
+	// 	yue.innerHTML="<p>§ 凶 §</p>";
+	// }
+	// else if((daji>=0)&&(daji<10)){
+	// 	yue.innerHTML="<p>§大凶§</p>";
+	// }
 }
 
 var 
@@ -64,16 +81,13 @@ pp=["相思","伤心","山河","姑苏","倾城","韶光","阑干","悠悠","悠
 pz=["明月","携手","凝睇","回首","青鸟","流水","千载","菱蔓","画堂","青嶂",""],
 zp=["玉笙","泪珠","绿波","江山","宫殿","藕花","莲叶","几时",""];
 
+//-----作诗-----
 var ifused=[];
 var ifcnt=0;
 
-
-
 function randd(t){
-	// var if_use = [];
 	console.log(t);
 	        var k,cnt = 0;
-			// var t=aa.soilt("-")
 	        while(t[cnt] != ""){
 				cnt=cnt+1;
 				// console.log(cnt)
@@ -81,7 +95,6 @@ function randd(t){
 	        do{
 	                k = Math.floor((Math.random()*100)+1)% cnt;
 					console.log(k);
-					// }while(0);
 	        }while(jQuery.inArray( t[k], ifused )!=-1);
 			ifused[ifcnt]=t[k];
 			ifcnt=ifcnt+1;
@@ -92,187 +105,53 @@ function zuoshi() {
 	
 	var ri=document.getElementById("pai03");
 	console.log("faqqq");
-        ri.innerHTML="摊破·浣溪沙"+"<br/>"+
-                randd(zz)+randd(pp)+randd(zzp)+","
-                +randd(pp)+randd(pz)+randd(zpp)+"。"+"<br/>"
-                +randd(pz)+randd(pp)+randd(zpz)+"，"
-                +randd(zpp)+"。"+"<br/>"
-                //----------------
-                +randd(zz)+randd(pp)+randd(zzp)+","
-                +randd(pp)+randd(pz)+randd(zpp)+"。"+"<br/>"
-                +randd(pz)+randd(zp)+randd(pzz)+"，"
-                +randd(zpp)+"。"+"<br/>";
+        // ri.innerHTML="摊破·浣溪沙"+"<br/>"+
+        //         randd(zz)+randd(pp)+randd(zzp)+","
+        //         +randd(pp)+randd(pz)+randd(zpp)+"。"+"<br/>"
+        //         +randd(pz)+randd(pp)+randd(zpz)+"，"
+        //         +randd(zpp)+"。"+"<br/>"
+        //         //----------------
+        //         +randd(zz)+randd(pp)+randd(zzp)+","
+        //         +randd(pp)+randd(pz)+randd(zpp)+"。"+"<br/>"
+        //         +randd(pz)+randd(zp)+randd(pzz)+"，"
+        //         +randd(zpp)+"。"+"<br/>";
+		
+		future=future+"摊破·浣溪沙"+"<br/>"+
+		        randd(zz)+randd(pp)+randd(zzp)+","
+		        +randd(pp)+randd(pz)+randd(zpp)+"。"+"<br/>"
+		        +randd(pz)+randd(pp)+randd(zpz)+"，"
+		        +randd(zpp)+"。"+"<br/>"
+		        //----------------
+		        +randd(zz)+randd(pp)+randd(zzp)+","
+		        +randd(pp)+randd(pz)+randd(zpp)+"。"+"<br/>"
+		        +randd(pz)+randd(zp)+randd(pzz)+"，"
+		        +randd(zpp)+"。"+"<br/>";
+		
+		
 	ifused=[""];
 }
 
-
-// function randdzzp(){
-// 	// var if_use = [];
-// 	        var k,cnt = 0;
-// 			
-// 	        while(zzp[cnt] != "") cnt=cnt+1;
-// 	        do{
-// 	                k = Math.floor((Math.random()*100)+1)% cnt;
-// 	        }while(jQuery.inArray( zzp[k], ifused )!=-1);
-// 			ifused[ifcnt]=zzp[k];
-// 			ifcnt=ifcnt+1;
-// 			return zzp[k];
-// }
-
-// function randdzpp(){
-// 	// var if_use = [];
-// 	        var k,cnt = 0;
-// 			
-// 	        while(zpp[cnt] != "") cnt=cnt+1;
-// 	        do{
-// 	                k = Math.floor((Math.random()*100)+1)% cnt;
-// 	        }while(jQuery.inArray( zpp[k], ifused )!=-1);
-// 			ifused[ifcnt]=zpp[k];
-// 			ifcnt=ifcnt+1;
-// 			return zpp[k];
-// }
-// 
-// function randdpzz(){
-// 	// var if_use = [];
-// 	        var k,cnt = 0;
-// 			
-// 	        while(pzz[cnt] != "") cnt=cnt+1;
-// 	        do{
-// 	                k = Math.floor((Math.random()*100)+1)% cnt;
-// 	        }while(jQuery.inArray( pzz[k], ifused )!=-1);
-// 			ifused[ifcnt]=pzz[k];
-// 			ifcnt=ifcnt+1;
-// 			return pzz[k];
-// }
-// 
-// function randdzpz(){
-// 	// var if_use = [];
-// 	        var k,cnt = 0;
-// 			
-// 	        while(zpz[cnt] != "") cnt=cnt+1;
-// 	        do{
-// 	                k = Math.floor((Math.random()*100)+1)% cnt;
-// 	        }while(jQuery.inArray( zpz[k], ifused )!=-1);
-// 			ifused[ifcnt]=zpz[k];
-// 			ifcnt=ifcnt+1;
-// 			return zpz[k];
-// }
-// 
-// function randzz(){
-// 	// var if_use = [];
-// 	        var k,cnt = 0;
-// 			
-// 	        while(zz[cnt] != "") cnt=cnt+1;
-// 	        do{
-// 	                k = Math.floor((Math.random()*100)+1)% cnt;
-// 	        }while(jQuery.inArray( zz[k], ifused )!=-1);
-// 			ifused[ifcnt]=zz[k];
-// 			ifcnt=ifcnt+1;
-// 			return zz[k];
-// }
-// 
-// function randpp(){
-// 	// var if_use = [];
-// 	        var k,cnt = 0;
-// 			
-// 	        while(pp[cnt] != "") cnt=cnt+1;
-// 	        do{
-// 	                k = Math.floor((Math.random()*100)+1)% cnt;
-// 	        }while(jQuery.inArray( pp[k], ifused )!=-1);
-// 			ifused[ifcnt]=pp[k];
-// 			ifcnt=ifcnt+1;
-// 			return pp[k];
-// }
-// 
-// function randpz(){
-// 	// var if_use = [];
-// 	        var k,cnt = 0;
-// 			
-// 	        while(pz[cnt] != "") cnt=cnt+1;
-// 	        do{
-// 	                k = Math.floor((Math.random()*100)+1)% cnt;
-// 	        }while(jQuery.inArray( pz[k], ifused )!=-1);
-// 			ifused[ifcnt]=pz[k];
-// 			ifcnt=ifcnt+1;
-// 			return pz[k];
-// }
-// 
-// function randzp(){
-	// var if_use = [];
-// 	        var k,cnt = 0;
-// 			
-// 	        while(pz[cnt] != "") cnt=cnt+1;
-// 	        do{
-// 	                k = Math.floor((Math.random()*100)+1)% cnt;
-// 	        }while(jQuery.inArray( zp[k], ifused )!=-1);
-// 			ifused[ifcnt]=zp[k];
-// 			ifcnt=ifcnt+1;
-// 			return zp[k];
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function randd(t){
-// 		// set<string> if_use;
-// 		var if_use = [];
-//         var k,cnt = 0;
-//         while(t[cnt] != "") ++cnt;
-//         do{
-//                 k = Math.floor((Math.random()*100)+1)% cnt;
-//         }while(if_use.count(t[k]));
-//         // if_use.insert(t[k]);
-// //         int a = 0,b = 10000000;
-// //         while (b--){
-// //                 ++ a;
-// //         }
-//         return t[k];
-// }
-// 
-// function zuoshi() {
-// 	
-// 	var ri=document.getElementById("pai03");
-// 	
-//         //随机部分还没写
-// 		
-//         ri.innerHTML="摊破·浣溪沙+"<br/>"+
-//                 randd(zz)+randd(pp)+randd(zzp)+","
-//                 +randd(pp)+randd(pz)+randd(zpp)+"。+"<br/>"+
-//                 +randd(pz)+randd(pp)+randd(zpz)+"，"+
-//                 +randd(zpp)+"。+"<br/>"+
-                //----------------
-//                 +randd(zz)+randd(pp)+randd(zzp)+","+
-//                 +randd(pp)+randd(pz)+randd(zpp)+"。+"<br/>"+
-//                 +randd(pz)+randd(zp)+randd(pzz)+"，"+
-//                 +randd(zpp)+"。+"<br/>";
-// }
-
-
-
-
+function fanpai01(){
+	$("#pai01").removeClass("pai");
+	$("#pai01").addClass("haihai");
+	var nian=document.getElementById("pai01");
+	nian.innerHTML=future;
+	$("#pailan").css("disabled","disabled");
+}
+function fanpai02(){
+	$("#pai02").removeClass("pai");
+	$("#pai02").addClass("haihai");
+	var yue=document.getElementById("pai02");
+	yue.innerHTML=future;
+	$("#pailan").css("disabled","disabled");
+}
+function fanpai03(){
+	$("#pai03").removeClass("pai");
+	$("#pai03").addClass("haihai");
+	var ri=document.getElementById("pai03");
+	ri.innerHTML=future;
+	$("#pailan").css("disabled","disabled");
+}
 
 
 
