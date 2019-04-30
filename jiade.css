@@ -1,0 +1,159 @@
+body{
+	font-family: 微软雅黑;
+	background: url('beijing.jpg') 50% 30% no-repeat black;
+	background-size: 100% ;
+}
+/* 
+a:link { text-decoration: none;color: blue;} 
+
+a:active { text-decoration:blink;} 
+a:hover { text-decoration:underline;color: red;} 
+a:visited { text-decoration: none;color: gray;}
+ */
+span{
+	color: white;
+}
+
+#shengri{
+	background: rgba(255,255,255,0.2);
+	border-radius: 5px;
+}
+
+#hehehehe{
+	color: #0080ff;
+	background-color: white;
+	padding: 4px 12px;
+	cursor: url('55.ani'),pointer;
+	border-radius: 5px;
+}
+.textbox{
+	width: 50px;
+	border-radius: 5px;
+}
+
+div:hover{
+	/* background: #66CCFF; */
+	border:1px;
+	border-color: white;
+}
+
+#icoico{
+	text-indent: -9999999px;
+	background: url('wsws.png') no-repeat 50% 50%;
+	background-size: 50px auto;
+	height: 52px;
+	width: 52px;
+	margin: 10px;
+	border-radius: 50%;
+	
+	border:3px;
+	border-style: solid;
+	/* border-color: #66FFCC; */
+	border-color: rgba(102,255,204,0.5);
+}
+#icoico:hover{
+	/* background: #66FFCC; */
+	border:3px;
+	border-style: solid;
+	/* border-color: #66CCFF; */
+	border-color: rgba(102,204,255,0.5);
+	transition: all .2s ease-in 0ms;
+	transform:rotate(3deg);
+}
+
+div.pai{
+	background: url('paimiana.jpg') no-repeat 50% 50%;
+	width: 264px;
+	height: 436px;
+	/* float: left; */
+	border-radius: 5%;
+	box-shadow: 2px 3px 20px 0px ;
+	margin: 10px;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+
+#pailan{
+	height: 450px;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.pai:hover{
+	
+	/* position:relative;
+	left:20px; */
+	
+	/* background: url('neirong.jpg') no-repeat 50% 50%; */
+	
+	box-shadow: 6px 8px 30px 0px ;
+	transition: all .3s ease-in 0ms;
+	
+	transform: translate(-5px,-5px);
+}
+
+#dibulan{
+	background-color: saddlebrown;
+	/* display: auto; */
+}
+
+
+
+
+.haihai{
+	background: url('neirong.jpg') no-repeat 50% 50%;
+	width: 264px;
+	height: 436px;
+	/* float: left; */
+	border-radius: 5%;
+	box-shadow: 2px 3px 20px 0px ;
+	margin: 10px;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+}
+.haihai:hover{
+	box-shadow: 6px 8px 30px 0px ;
+	transition: all .3s ease-in 0ms;
+	
+	transform: translate(-5px,-5px);
+}
+
+
+
+/* .headd{
+	overflow: hidden;
+	display:inline;
+	width: 100px;
+	height: 23px;
+	float: left;
+	background: white;
+	font-size:18px;
+	font: 微软雅黑;
+	border:1px;
+	border-style: solid;
+	border-color: #66CCFF;
+	text-align:center;
+} */
+/* div.headf{
+	overflow: hidden;
+	display:inline;
+	width: 100%;
+	height: 20px;
+	background: rgba(102,204,255,0.5);
+	border: 1px;
+	border-style: solid;
+	border-color: #66CCFF;
+	margin: 5px;
+} */
