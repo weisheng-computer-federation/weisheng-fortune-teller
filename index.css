@@ -1,6 +1,6 @@
 body{
 	font-family: 微软雅黑;
-	background: url('beijing.jpg') 50% 30% no-repeat black;
+	background: url('imgs/background.jpg') 50% 30% no-repeat black;
 	background-size: 100% ;
 }
 /* 
@@ -23,7 +23,7 @@ span{
 	color: #0080ff;
 	background-color: white;
 	padding: 4px 12px;
-	cursor: url('55.ani'),pointer;
+	cursor: pointer;
 	border-radius: 5px;
 }
 .textbox{
@@ -39,7 +39,7 @@ div:hover{
 
 #icoico{
 	text-indent: -9999999px;
-	background: url('wsws.png') no-repeat 50% 50%;
+	background: url('imgs/wsws.png') no-repeat 50% 50%;
 	background-size: 50px auto;
 	height: 52px;
 	width: 52px;
@@ -62,7 +62,7 @@ div:hover{
 }
 
 div.pai{
-	background: url('paimiana.jpg') no-repeat 50% 50%;
+	background: url('imgs/card.jpg') no-repeat 50% 50%;
 	width: 264px;
 	height: 436px;
 	/* float: left; */
@@ -109,7 +109,7 @@ div.pai{
 
 
 .haihai{
-	background: url('neirong.jpg') no-repeat 50% 50%;
+	background: url('imgs/content.jpg') no-repeat 50% 50%;
 	width: 264px;
 	height: 436px;
 	/* float: left; */
@@ -129,9 +129,6 @@ div.pai{
 	
 	transform: translate(-5px,-5px);
 }
-
-
-
 /* .headd{
 	overflow: hidden;
 	display:inline;
