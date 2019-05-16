@@ -2,73 +2,73 @@
 var future;
 
 function meiranyong(){
-	// var nian=document.getElementById("pai01");
-	
-	// var xingyun=Math.floor((Math.random()*100)+1);
-	// if(xingyun>=90){
-	// 	nian.innerHTML="§大吉§";
-	// }
-	// else nian.innerHTML="§小吉§"+xingyun;
-	// 
-	// ji();
-	// $("#pai01").removeClass("pai");
-	// $("#pai01").addClass("haihai");
+    // var nian=document.getElementById("pai01");
+    
+    // var xingyun=Math.floor((Math.random()*100)+1);
+    // if(xingyun>=90){
+    // 	nian.innerHTML="§大吉§";
+    // }
+    // else nian.innerHTML="§小吉§"+xingyun;
+    // 
+    // ji();
+    // $("#pai01").removeClass("pai");
+    // $("#pai01").addClass("haihai");
 
-	// randd(zpp);
-	ji();
-	zuoshi();
-	
-	//disabled
-	$("#pailan").css("disabled","none");
+    // randd(zpp);
+    ji();
+    zuoshi();
+    
+    //disabled
+    $("#pailan").css("disabled","none");
 }
 
 var jishu;
 var daji;
 function ji(){
-	daji=Math.floor((Math.random()*100)+1);
-	panji();
+    daji=Math.floor((Math.random()*100)+1);
+    panji();
 }
 function panji(){
-	// var yue=document.getElementById("pai02");
-	
-	if(daji>=90){
-		future="<p style='color:red;'>§<br/>大吉<br/>§</p>";
-	}
-	else if((daji>=70)&&(daji<90)){
-		future="<p style='color:red;'>§<br/>中吉<br/>§</p>";
-	}
-	else if((daji>=50)&&(daji<70)){
-		future="<p style='color:red'>§<br/>小吉<br/>§</p>";
-	}
-	else if((daji>=30)&&(daji<50)){
-		future="<p>§<br/>中平<br/>§</p>";
-	}
-	else if((daji>=10)&&(daji<30)){
-		future="<p>§<br/> 凶 <br/>§</p>";
-	}
-	else if((daji>=0)&&(daji<10)){
-		future="<p>§<br/>大凶<br/>§</p>";
-	}
-	
-	// var yue=document.getElementById("pai02");
-	// if(daji>=90){
-	// 	yue.innerHTML="<p>§大吉§</p>";
-	// }
-	// else if((daji>=70)&&(daji<90)){
-	// 	yue.innerHTML="<p>§中吉§</p>";
-	// }
-	// else if((daji>=50)&&(daji<70)){
-	// 	yue.innerHTML="<p>§小吉§</p>";
-	// }
-	// else if((daji>=30)&&(daji<50)){
-	// 	yue.innerHTML="<p>§中平§</p>";
-	// }
-	// else if((daji>=10)&&(daji<30)){
-	// 	yue.innerHTML="<p>§ 凶 §</p>";
-	// }
-	// else if((daji>=0)&&(daji<10)){
-	// 	yue.innerHTML="<p>§大凶§</p>";
-	// }
+    // var yue=document.getElementById("pai02");
+    
+    if(daji>=90){
+        future="<p style='color:red;'>§大吉§</p>";
+    }
+    else if((daji>=70)&&(daji<90)){
+        future="<p style='color:red;'>§中吉§</p>";
+    }
+    else if((daji>=50)&&(daji<70)){
+        future="<p style='color:red;'>§小吉§</p>";
+    }
+    else if((daji>=30)&&(daji<50)){
+        future="<p>§中平§</p>";
+    }
+    else if((daji>=10)&&(daji<30)){
+        future="<p style='color:red;'>§小吉§</p>";
+    }
+    else if((daji>=0)&&(daji<10)){
+        future="<p>§中平§</p>";
+    }
+    
+    // var yue=document.getElementById("pai02");
+    // if(daji>=90){
+    // 	yue.innerHTML="<p>§大吉§</p>";
+    // }
+    // else if((daji>=70)&&(daji<90)){
+    // 	yue.innerHTML="<p>§中吉§</p>";
+    // }
+    // else if((daji>=50)&&(daji<70)){
+    // 	yue.innerHTML="<p>§小吉§</p>";
+    // }
+    // else if((daji>=30)&&(daji<50)){
+    // 	yue.innerHTML="<p>§中平§</p>";
+    // }
+    // else if((daji>=10)&&(daji<30)){
+    // 	yue.innerHTML="<p>§ 凶 §</p>";
+    // }
+    // else if((daji>=0)&&(daji<10)){
+    // 	yue.innerHTML="<p>§大凶§</p>";
+    // }
 }
 
 var 
@@ -86,25 +86,25 @@ var ifused=[];
 var ifcnt=0;
 
 function randd(t){
-	console.log(t);
-	        var k,cnt = 0;
-	        while(t[cnt] != ""){
-				cnt=cnt+1;
-				// console.log(cnt)
-			}
-	        do{
-	                k = Math.floor((Math.random()*100)+1)% cnt;
-					console.log(k);
-	        }while(jQuery.inArray( t[k], ifused )!=-1);
-			ifused[ifcnt]=t[k];
-			ifcnt=ifcnt+1;
-			return t[k];
+    console.log(t);
+            var k,cnt = 0;
+            while(t[cnt] != ""){
+                cnt=cnt+1;
+                // console.log(cnt)
+            }
+            do{
+                    k = Math.floor((Math.random()*100)+1)% cnt;
+                    console.log(k);
+            }while(jQuery.inArray( t[k], ifused )!=-1);
+            ifused[ifcnt]=t[k];
+            ifcnt=ifcnt+1;
+            return t[k];
 }
 
 function zuoshi() {
-	
-	var ri=document.getElementById("pai03");
-	console.log("faqqq");
+    
+    var ri=document.getElementById("pai03");
+    console.log("faqqq");
         // ri.innerHTML="摊破·浣溪沙"+"<br/>"+
         //         randd(zz)+randd(pp)+randd(zzp)+","
         //         +randd(pp)+randd(pz)+randd(zpp)+"。"+"<br/>"
@@ -115,42 +115,43 @@ function zuoshi() {
         //         +randd(pp)+randd(pz)+randd(zpp)+"。"+"<br/>"
         //         +randd(pz)+randd(zp)+randd(pzz)+"，"
         //         +randd(zpp)+"。"+"<br/>";
-		
-		future=future+"摊破·浣溪沙"+"<br/>"+
-		        randd(zz)+randd(pp)+randd(zzp)+","
-		        +randd(pp)+randd(pz)+randd(zpp)+"。"+"<br/>"
-		        +randd(pz)+randd(pp)+randd(zpz)+"，"
-		        +randd(zpp)+"。"+"<br/>"
-		        //----------------
-		        +randd(zz)+randd(pp)+randd(zzp)+","
-		        +randd(pp)+randd(pz)+randd(zpp)+"。"+"<br/>"
-		        +randd(pz)+randd(zp)+randd(pzz)+"，"
-		        +randd(zpp)+"。"+"<br/>";
-		
-		
-	ifused=[""];
+        
+        future=future+"<div>摊破·浣溪沙<br/><br/>"+
+                randd(zz)+randd(pp)+randd(zzp)+","
+                +randd(pp)+randd(pz)+randd(zpp)+"。"+"<br/><br/>"
+                +randd(pz)+randd(pp)+randd(zpz)+"，"
+                +randd(zpp)+"。"+"<br/><br/>"
+                //----------------
+                +randd(zz)+randd(pp)+randd(zzp)+","
+                +randd(pp)+randd(pz)+randd(zpp)+"。"+"<br/><br/>"
+                +randd(pz)+randd(zp)+randd(pzz)+"，"
+                +randd(zpp)+"。"+"</div>";
+        
+        
+    ifused=[""];
 }
 
-function fanpai01(){
-	$("#pai01").removeClass("pai");
-	$("#pai01").addClass("haihai");
-	var nian=document.getElementById("pai01");
-	nian.innerHTML=future;
-	$("#pailan").css("disabled","disabled");
+function fanpai(pai){
+    if (check() == 1){
+        alert('请输入您的生日!');
+        return;
+    }
+    if (check() == 2){
+        alert('已抽过牌!');
+        return;
+    }
+    pai.removeClass("pai");
+    pai.addClass("haihai");
+    pai[0].innerHTML=future;
+    $("#pailan").css("disabled","disabled");
 }
-function fanpai02(){
-	$("#pai02").removeClass("pai");
-	$("#pai02").addClass("haihai");
-	var yue=document.getElementById("pai02");
-	yue.innerHTML=future;
-	$("#pailan").css("disabled","disabled");
-}
-function fanpai03(){
-	$("#pai03").removeClass("pai");
-	$("#pai03").addClass("haihai");
-	var ri=document.getElementById("pai03");
-	ri.innerHTML=future;
-	$("#pailan").css("disabled","disabled");
+function check(){
+    if ($('.haihai').length > 0)
+        return 2;
+    let inputs = $('input')
+    if (inputs[0].value == '' || inputs[1].value == '' || inputs[2].value == '')
+        return 1;
+    return 0;
 }
 
 

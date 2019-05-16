@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<link href="imgs/wsws.png" rel="shortcut icon" type="image/x-icon" />
-		<title>微笙无上_在线算命</title>
-		
-		<script src="index.js" type="text/javascript"></script>
-		<link rel="stylesheet" type="text/css" href="index.css" />
-		
-		<!-- <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script> -->
-		<script src="jquery.js" type="text/javascript"></script>
-		
-	</head>
-	<body>
-		<div id="wsws">
-			<a href="http://www.weisheng.cf" target="_blank"><div id="icoico">微笙无上首页<!-- <img style="height:60px" src="wsws.png" alt="微笙无上首页"/> --></div></a>
-		</div>
-		<hr />
-		<div id="shengri">
-			<span>输入您的生日吧:</span>
-			<input type="text" id="textboxnian" class="textbox" />
-			<span>年</span>
-			<input type="text" id="textboxyue" class="textbox" />
-			<span>月</span>
-			<input type="text" id="textboxri" class="textbox" />
-			<span>日</span>
-			<input type="button" id="hehehehe" onclick="meiranyong()" value="就这样吧!" />
-		</div>
-		<hr />
-		<div id="pailan">
-			<div class="pai" id="pai01" onclick="fanpai01()">  </div>
-			<div class="pai" id="pai02" onclick="fanpai02()">  </div>
-			<div class="pai" id="pai03" onclick="fanpai03()">  </div>
-		</div>
-		<br />
-		<hr />
-		<!-- <div id="dibulan">
-			<a href="http://www.weisheng.cf" target="_blank">微笙官网</a>
-			<a href=# target="_blank">校园门户</a>
-			<a href="https://www.weisheng.cf/games/" target="_blank">游戏库</a>
-			<a href="https://www.weisheng.cf/games/RandQAQ/" target="_blank">抽号鸭</a>
-			<a href="https://www.weisheng.cf/games/2048/play/" target="_blank">2048</a>
-			<a href="https://www.bilibili.com/" target="_blank">bilibili</a>
-		</div> -->
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <link href="imgs/wsws.png" rel="shortcut icon" type="image/x-icon" />
+        <title>在线算命</title>
+        <script src="index.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <script src="jquery.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>
+            微笙计协
+            <div onclick="window.open('https://weisheng.cf')">微笙无上首页</div>
+            今日运势
+        </h2>
+        <h2>
+            Developed by ZHkmy&Beautyyu&Lyx
+        </h2>
+        <hr />
+        <script>meiranyong()</script>
+        <div class="phrase">
+            <span>1. 输入您的生日:</span>
+            <input type="text" id="textboxnian" class="textbox" />
+            <span>年</span>
+            <input type="text" id="textboxyue" class="textbox" />
+            <span>月</span>
+            <input type="text" id="textboxri" class="textbox" />
+            <span>日</span>
+        </div>
+        <hr />
+        <div class="phrase">
+            2. 抽卡!!!
+        </div>
+        <div id="pailan">
+            <div class="pai" id="pai01" onclick="fanpai($('#pai01'))">  </div>
+            <div class="pai" id="pai02" onclick="fanpai($('#pai02'))">  </div>
+            <div class="pai" id="pai03" onclick="fanpai($('#pai03'))">  </div>
+        </div>
+        <br />
+        <hr />
+    </body>
 </html>
